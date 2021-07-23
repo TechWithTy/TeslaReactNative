@@ -5,7 +5,13 @@ import CarItem from './components/carItem/Index';
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem />
+      <CarItem
+        backgroundImage={require('./assets/images/ModelS.jpeg')}
+        title="Model S"
+        subtitle="Order Online For"
+        subtitleCTA="Touchless Delivery"
+      />
+   
       <StatusBar style="auto" />
     </View>
   );
