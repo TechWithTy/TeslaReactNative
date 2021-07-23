@@ -13,20 +13,23 @@ export default function CarItem({ props }) {
         <Text style={styles.title}>Model X</Text>
         <Text style={styles.subtitle}> Starting at $68,000</Text>
       </View>
-      <StyledButton
-        type="primary"
-        text="Custom Order"
-        onPress={() => {
-          console.warn('Custom order was pressed');
-        }}
-      />
-      <StyledButton
-        type="secondary"
-        text="Existing Inventory"
-        onPress={() => {
-          console.warn('Existing Inventory was pressed');
-        }}
-      />
+      <View style={styles.buttonContainer}>
+       
+        <StyledButton
+          type="primary"
+          text="Custom Order"
+          onPress={() => {
+            console.warn('Custom order was pressed');
+          }}
+        />
+        <StyledButton
+          type="secondary"
+          text="Existing Inventory"
+          onPress={() => {
+            console.warn('Existing Inventory was pressed');
+          }}
+        />
+      </View>
     </View>
   );
 }
