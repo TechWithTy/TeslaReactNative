@@ -11,7 +11,10 @@ const CarsList = (props) => {
       <FlatList
         data={cars}
         renderItem={({ item }) => <CarItem car={item} />}
-       
+        snapToAlignment={"start"}
+        decelerationRate={'fast'}
+        showsVerticalScrollIndicator={false}
+        snapToInterval={Dimensions.get('window').height}
       />
     </View>
   );
